@@ -1,1 +1,1 @@
-# Sequence-annotation
+Antigenic annotation pipeline
