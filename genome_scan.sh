@@ -59,7 +59,7 @@ mkdir -p "$id"_translated
 
 cd "$id"_translated
 
-multif_tosinglef_new.py  "$start_path"/"$id"_all_cds_new.fa
+multif_tosinglef.py  "$start_path"/"$id"_all_cds_new.fa
 
 for x in *.fasta;do
 	transeq -sequence "$x" -outseq "$x"_frames  -frame 6
@@ -74,9 +74,9 @@ bepipred "$id"_final_prot.fa > "$id".bepipred
 
 clustalo -i "$id"_final_prot.fa -o "$id"_aligned_prot.fa
 
-align_bepipred_args.py "$id".bepipred "$id"_aligned_prot.fa "$id"_for_ggplot.txt
+align_bepipred_score.py "$id".bepipred "$id"_aligned_prot.fa "$id"_for_ggplot.txt
 
-ag_plots_14_06.R "$id"_for_ggplot.txt "$id".png "$id"
+Antigenic_plot.R "$id"_for_ggplot.txt "$id".png "$id"
 
 
 cowsay -f dragon FINISHED
