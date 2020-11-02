@@ -1,5 +1,6 @@
 
-genome_scan.sh is a pipeline that predicts, translates and annotates proteins from draft genomes<br /> <br /> <br /> 
+genome_scan.sh is a pipeline that generates an antigenic variation plot after predicting coding-exons 
+from draft genomes <br /> <br /> <br /> 
 
 Part I
 - Predicts best scoring coding-exon sequences from target genome/s using exonerate protein2genome model
@@ -12,7 +13,7 @@ Part II
 - Aligns all proteins from the mf file (Output of Part I).
 - Runs Bepipred, Tmhmm and a CDD search on each protein (after separating the mf file using mulif_to_singlef.py, see Sequence-tools) 
 - Aligns antigenicity predition scores to the sequence alignment using align_bepipred_scores.py (see Sequence-tools)
-- Plots aligned antigenic scores in R (see R-plots repository).
+- Plots aligned antigenic scores in R (see R-plots repository).<br /> <br /> <br /> 
 
 
       Usage:  ./genome_scan.sh /path/to/genomes/ protein_query best_n
