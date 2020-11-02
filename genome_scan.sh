@@ -42,7 +42,7 @@ for f in "$path_to_genomes"*fa*;do
 	--target "$g" --showtargetgff yes --showalignment no --showvulgar no --showquerygff no --bestn "$best_n" \
 	--ryo "%qi(%qab - %qae)\n%qas\n >%ti:%s(%tab - %tae)\n%tas\n >%ti:%s\n%tcs\n" > "$id"_"$nameb"/"$id".exonerate
 	cd "$id"_"$nameb"
-	extract_exonerate_v3.py "$id" "$id".exonerate
+	extract_exonerate.py "$id" "$id".exonerate
 	cat *cds.fasta > "$id".fasta
 	exonerate_highest_score.py "$id".fasta > "$id"_final.fasta
 	cat "$id"_final.fasta >> "$start_path"/"$id"_all_cds.fa
