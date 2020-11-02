@@ -12,4 +12,4 @@ Pipeline to predict and annotate proteins from a draft genome<br /> <br /> <br /
 <br /> <br /> <br /> 
 <br /> <br /> <br /> 
 
-![alt text](Antigenic-annotation-pipeline/diagram/pipeline_diagram.png)
+![alt text](https://github.com/camilla-eldridge/Antigenic-annotation-pipeline/blob/main/diagram/pipeline_diagram.png)
