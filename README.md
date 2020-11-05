@@ -1,10 +1,11 @@
 
 Antigenic annotation pipeline<br /> <br /> <br /> 
 
-Problem: Many draft genomes are yet to be annotated with proteins lacking functional annotation, to include some species in functional analyses researchers need to wait for genome annotation. 
+Created to predict and annotate potential vaccine candidate proteins from draft genomes.
 
-Solution: genome_scan.sh is a pipeline that predicts and annotates specific proteins from draft genomes to predict transmembrane regions,conserved domains and antigenic regions.<br /> <br /> <br /> 
+Problem: Some genomes of medically important parasites are in draft form and lack functional annotation.
 
+Solution: genome_scan.sh predicts and annotates single protein queries from draft genomes and provides further annotation of transmembrane regions,conserved domains and antigenic regions, allowing a comparison of conserved protien characteristics to inform future vaccine research.<br /> <br /> <br /> 
 
 
       Usage:  ./genome_scan.sh /path/to/genomes/ protein_query best_n
