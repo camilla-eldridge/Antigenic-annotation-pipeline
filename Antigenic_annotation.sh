@@ -4,7 +4,7 @@
 
 # Notes on usage #
 if [ "$1" == "-h" ]; then
-  echo "Usage: ./genome_scan_15_06.sh /full/path/to/genomes/ protein_query best_n id"
+  echo "Usage:  ./Antigenic_annotation.sh  /path/to/genomes/ protein_query best_n  gene_id  translation_table"
   exit 0
 fi
 
