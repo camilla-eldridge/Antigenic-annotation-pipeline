@@ -13,12 +13,12 @@ This pipeline was created to predict and annotate potential vaccine candidate pr
 
       Usage:  ./Antigenic_annotation.sh  /path/to/genomes/ protein_query.fasta  best_n  gene_id  translation_table
       
-      ./Antigenic_annotation.sh = The shell script.
-       /path/to/genomes/ = Path to directory containing target genomes.
-       protein_query.fasta = A single protein reference sequence in fasta format. 
-       best_n = The number of predictions you want exonerate to make for each genome.
-       gene_id = An id for naming your results files and directories e.g the name of the gene you are predicting.
-       translation_table = the translation table to be used for translating predictions e.g standard is 1. 
+       1. ./Antigenic_annotation.sh = The shell script.
+       2. /path/to/genomes/ = Path to directory containing target genomes.
+       3.  protein_query.fasta = A single protein reference sequence in fasta format. 
+       4.  best_n = The number of predictions you want exonerate to make for each genome.
+       5.  gene_id = An id for naming your results files and directories e.g the name of the gene you are predicting.
+       6.  translation_table = the translation table to be used for translating predictions e.g standard is 1. 
        
        
 <br /> <br /> <br /> 
