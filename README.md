@@ -44,42 +44,41 @@ Solution:
 # Notes on usage and requirements 
 
 This pipeline relies on a number of python scripts (found in Sequence-tools repository). To run Antigenic-annotation.sh you will need:
- _ extract_exonerate.py
- _ longest_orf.py
- _ align_bepipred_scores.py
- _ cdd_search.sh
- _ multif_to_singlef.py
- _ Ag_plot.R
+ * extract_exonerate.py
+ * longest_orf.py
+ * align_bepipred_scores.py
+ * cdd_search.sh
+ * multif_to_singlef.py
+ * Ag_plot.R
 
 All scripts mentioned above and the following programs need to be made available to $PATH.
-_ Exonerate (tested with v2.4.0).
-_ Transeq (from emboss v6.6.0.0)
- _ cowsay (v3.03)
- _ Bepipred (tested with v1.0)
- _ Clustalo (tested with V1.2.4)
+ * Exonerate (tested with v2.4.0).
+ * Transeq (from emboss v6.6.0.0)
+ * cowsay (v3.03)
+ * Bepipred (tested with v1.0)
+ * Clustalo (tested with V1.2.4)
 
 
 <br /> <br /> <br />
 
 # Notes on personalisation
  
-_ If you want to change the axes in the plot the easiest way is to edit them in align_bepipred_scores.py at:
+* If you want to change the axes in the plot the easiest way is to edit them in align_bepipred_scores.py at:
             `out.write("Sequence" + "," + "AA" + "," + "Ag" + "," + "code" + "\n" + "\n".join(final))`
             
-_ At the moment the ids of the predicted sequences cannot be edited.
+* At the moment the ids of the predicted sequences cannot be edited.
 
-_ Target genomes need to have the .fna extension, if you want to change this alter the extension in the line: `for f in *.fna*;do` in `Antigenic-annotation.sh`.
-
+* Target genomes need to have the .fna extension, if you want to change this alter the extension in the line: `for f in *.fna*;do` in `Antigenic-annotation.sh`.
 <br /> <br /> <br /> 
 
 
 # Notes and improvement:
 
-On gene models and repeats
+On gene models and repeats<br /> <br /> <br /> 
 It is important to know before hand the gene model of your protein so that you can manually check the predictions. <br /> <br /> <br /> 
-Unlike in whole genome annotation, there is no step in this pipeline to remove repeat regions from the draft genome (work in progress). 
+Unlike in whole genome annotation, there is no step in this pipeline to remove repeat regions from the draft genome before prediction, this is a work in progress. 
 <br /> <br /> <br /> 
-To rectify this you can generate a species specific repeat library (using RepArk and/or Repeatmasker) and BLAST the coding-exon predictions against this library  to see if any repeat regions have been included in their predictions.<br /> <br /> <br /> 
+To rectify this you can generate a species specific repeat library (using RepArk and/or Repeatmasker) and BLAST the coding-exon predictions against this library  to see if any repeat regions have been included in their predictions. <br /> <br /> <br /> 
 This pipeline can also be run on cDNA datasets; and by using Transdecoder you can separate out the long coding transcripts then use these to check the validity of your gene model i.e are the number of exons predicted in the expressed transcript (as predicted only from coding transcripts) the same as in the coding-exon prediction.
 <br /> <br /> <br /> 
 
