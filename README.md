@@ -12,9 +12,6 @@ Solution: Antigenic_annotation.sh predicts and annotates single protein queries 
 
 <br /> <br /> <br /> 
 <br /> <br /> <br /> 
-
-![alt text](https://github.com/camilla-eldridge/Antigenic-annotation-pipeline/blob/main/diagram/pipeline_diagram.png)
-
 <br /> <br /> <br /> 
 
 Part I
@@ -24,13 +21,22 @@ Part I
 - Uses longest_orf.py (see Sequence-tools) to predict the longest open reading frame.
 - Stores the prediction from each species/genome in a single mf file.<br /> <br /> <br /> 
 
+![alt text](https://github.com/camilla-eldridge/Antigenic-annotation-pipeline/blob/main/diagram/part_I.png)
+
+<br /> <br /> <br /> 
+
 Part II
 - Aligns all proteins from the mf file (Output of Part I).
 - Runs Bepipred, Tmhmm and a CDD search on each protein (after separating the mf file using mulif_to_singlef.py, see Sequence-tools) 
 - Aligns antigenicity predition scores to the sequence alignment using align_bepipred_scores.py (see Sequence-tools)
 - Plots aligned antigenic scores in R (see R-plots repository).<br /> <br /> <br /> 
 
+
+![alt text](https://github.com/camilla-eldridge/Antigenic-annotation-pipeline/blob/main/diagram/part_II.png)
+
+
 <br /> <br /> <br /> 
+
 Required in PATH$: 
 - exonerate
 - cowsay (for fun)
