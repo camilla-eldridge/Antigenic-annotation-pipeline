@@ -6,10 +6,11 @@ library(ggplot2)
 output_file_name<-args[2]
 plot_title <-args[3]
 
-agtest<-read.table(args[1], header = TRUE, sep = " ")
+agtest<-read.csv(args[1], header = TRUE)
 
 T<-ggplot() +
-  geom_line(data = agtest, aes(x = AA , y = Ag, group = Species, colour=Species)) + 
+  geom_line(data = agtest, aes(x = AA , y = Ag, group = Sequence, colour=Sequence)) + 
+  #facet_wrap(~Sequence)+ ####makes individual plots for each sequence
   theme_bw() + 
   theme(plot.background = element_blank(),
         panel.grid.major = element_blank(),
