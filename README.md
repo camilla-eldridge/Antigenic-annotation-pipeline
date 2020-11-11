@@ -5,10 +5,10 @@ Created to predict and annotate potential vaccine candidate proteins from draft 
 
 Problem: Some genomes of medically important parasites are in draft form and lack functional annotation.
 
-Solution: genome_scan.sh predicts and annotates single protein queries from draft genomes and provides further annotation of transmembrane regions,conserved domains and antigenic regions, allowing a comparison of conserved protien characteristics to inform future vaccine research.<br /> <br /> <br /> 
+Solution: Antigenic_annotation.sh predicts and annotates single protein queries from draft genomes and provides further annotation of transmembrane regions,conserved domains and antigenic regions, allowing a comparison of conserved protien characteristics to inform future vaccine research.<br /> <br /> <br /> 
 
 
-      Usage:  ./genome_scan.sh /path/to/genomes/ protein_query best_n
+      Usage:  ./Antigenic_annotation.sh  /path/to/genomes/ protein_query best_n  gene_id  translation_table
 
 <br /> <br /> <br /> 
 <br /> <br /> <br /> 
@@ -40,14 +40,15 @@ Required in PATH$:
 - extract_exonerate.py
 - longest_orf.py
 - multif_to_singlef.py
-- align_bepipred_score.py
-- Antigenic_plot.R
+- align_bepipred_scores.py
+- cdd_search.sh
+- Ag_plot.R
 
 <br /> <br /> <br /> 
 
 Notes:
 #enter full path to genome directory
-#genomes need to have .fa extension
+#genomes need to have .fna extension (or edit Antigenic_annotation.sh )
 
 
 
