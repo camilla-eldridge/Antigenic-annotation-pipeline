@@ -5,8 +5,8 @@ This pipeline was created to predict and annotate potential vaccine candidate pr
 
 <br /> <br /> <br /> 
 Problems: 
-_ Some genomes of medically important parasites are in draft form and lack functional annotation that inhibits the screeing of potential vaccine candidates.
-_ When faced with multiple draft genomes it can be beyond the scope of a single project to annotate multiple genomes for comparative studies.
+* Some genomes of medically important parasites are in draft form and lack functional annotation that inhibits the screeing of potential vaccine candidates.
+* When faced with multiple draft genomes it can be beyond the scope of a single project to annotate multiple genomes for comparative studies.
 
 Solution: 
 _ `Antigenic_annotation.sh` predicts and annotates single protein queries from draft genomes and provides protein annotation of transmembrane regions, conserved domains and antigenic regions.<br /> <br /> <br /> 
