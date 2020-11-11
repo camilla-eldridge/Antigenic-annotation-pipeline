@@ -1,11 +1,11 @@
 
-Antigenic annotation pipeline<br /> <br /> <br /> 
+## Antigenic annotation pipeline<br /> <br /> <br /> 
 
 Created to predict and annotate potential vaccine candidate proteins from draft genomes.
-
+<br /> <br /> <br /> 
 Problem: Some genomes of medically important parasites are in draft form and lack functional annotation.
 
-Solution: Antigenic_annotation.sh predicts and annotates single protein queries from draft genomes and provides further annotation of transmembrane regions,conserved domains and antigenic regions, allowing a comparison of conserved protien characteristics to inform future vaccine research.<br /> <br /> <br /> 
+Solution: `Antigenic_annotation.sh` predicts and annotates single protein queries from draft genomes and provides protein annotation of transmembrane regions, conserved domains and antigenic regions.<br /> <br /> <br /> 
 
 
       Usage:  ./Antigenic_annotation.sh  /path/to/genomes/ protein_query best_n  gene_id  translation_table
@@ -14,7 +14,7 @@ Solution: Antigenic_annotation.sh predicts and annotates single protein queries 
 <br /> <br /> <br /> 
 <br /> <br /> <br /> 
 
-Part I
+# Part I
 - Predicts best scoring coding-exon sequences from target genome/s using exonerate protein2genome model
 - Extracts coding-exon sequence from exonerate output using extract_exonerate.py (see Sequence-tools repository)
 - Gets the highest scoring coding-exon alignment and translates it using Transeq (EMBOSS) (highest scoring is predicted using best_n 1 in exonerate)
@@ -25,7 +25,7 @@ Part I
 
 <br /> <br /> <br /> 
 
-Part II
+# Part II
 - Aligns all proteins from the mf file (Output of Part I).
 - Runs Bepipred, Tmhmm and a CDD search on each protein (after separating the mf file using mulif_to_singlef.py, see Sequence-tools) 
 - Aligns antigenicity predition scores to the sequence alignment using align_bepipred_scores.py (see Sequence-tools)
