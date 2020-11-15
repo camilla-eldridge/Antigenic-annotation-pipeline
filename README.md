@@ -85,7 +85,7 @@ This pipeline can also be run on cDNA datasets; and by using `Transdecoder` you 
 
 **On orthology** <br /> <br /> <br /> 
 The prediction of orthologs can be hindered by the existence of paralogs (gene duplications). This pipeline will predict the coding-exon sequence that
-aligns best to a reference sequence and cannot distinguish between orthologs and paralogs. <br /> <br /> <br /> 
+aligns best to a reference sequence and **cannot distinguish between orthologs and paralogs.** <br /> <br /> <br /> 
 
  The chance of your protein being a true ortholog can be explored after prediction:
 
