@@ -47,7 +47,9 @@ This pipeline was created to predict and annotate potential vaccine candidate pr
 
 <br /> <br /> <br /> 
 ## Notes on usage and requirements 
-This pipeline relies on a number of scripts, to run `Antigenic-annotation.sh` you will need:
+This pipeline relies on a number of scripts which can be found in this repository and in the Sequence-tools repository.
+To run `Antigenic-annotation.sh` you will need:
+
  * `extract_exonerate.py`
  * `longest_orf.py`
  * `align_bepipred_scores.py`
