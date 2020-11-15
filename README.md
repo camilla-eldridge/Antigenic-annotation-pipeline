@@ -92,11 +92,11 @@ All scripts mentioned above and the following programs need to be made available
 aligns best to a given reference sequence and **cannot distinguish between orthologs and paralogs.** <br /> <br /> <br /> 
 
 * The chance of your protein being a true ortholog can be explored after prediction:
-_  Check if your coding-exon is a single copy gene (i.e in predictions, from multiple genomes of related species, is there only one hit?).
-_ Making a gene tree (if this tree follows the species phylogeny then your sequence is more likely to be an ortholog).
-_ Check for in frame stop codons that might indicate your sequence is a non-functional paralog. Note that `longest_orf.py` searches for in-frame stop codons,  checking for an output txt file of these stop codons in predicted coding-exon sequences is a good place to start.
-_ If available, check transcriptome data, to see if your predicted coding-exon sequence is expressed by your species.
-_ Check functional annotation, i.e does the protein sequence have the same predicted functional domains as known orthologous sequences? It is generally assumed that orthologous proteins carry out the same or similar function  (although, of course, there are exceptions). 
+  - Check if your coding-exon is a single copy gene (i.e in predictions, from multiple genomes of related species, is there only one hit?).
+  - Making a gene tree (if this tree follows the species phylogeny then your sequence is more likely to be an ortholog).
+  - Check for in frame stop codons that might indicate your sequence is a non-functional paralog. Note that `longest_orf.py` searches for in-frame stop codons,   checking for an output txt file of these stop codons in predicted coding-exon sequences is a good place to start.
+  - If available, check transcriptome data, to see if your predicted coding-exon sequence is expressed by your species.
+  - Check functional annotation, i.e does the protein sequence have the same predicted functional domains as known orthologous sequences? It is generally assumed that orthologous proteins carry out the same or similar function  (although, of course, there are exceptions). 
 
 
 
