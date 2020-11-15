@@ -47,7 +47,7 @@ This pipeline was created to predict and annotate potential vaccine candidate pr
 
 <br /> <br /> <br /> 
 ## Notes on usage and requirements 
-This pipeline relies on a number of python scripts (found in Sequence-tools repository). To run Antigenic-annotation.sh you will need:
+This pipeline relies on a number of scripts, to run `Antigenic-annotation.sh` you will need:
  * `extract_exonerate.py`
  * `longest_orf.py`
  * `align_bepipred_scores.py`
@@ -64,7 +64,7 @@ All scripts mentioned above and the following programs need to be made available
 <br /> <br /> <br />
 
 ## Notes on personalisation
-* If you want to change the axes in the plot the easiest way is to edit them in align_bepipred_scores.py at:
+* If you want to change the axes in the plot the easiest way is to edit them in `align_bepipred_scores.py` at:
             `out.write("Sequence" + "," + "AA" + "," + "Ag" + "," + "code" + "\n" + "\n".join(final))`
             
 * At the moment the ids of the predicted sequences cannot be edited.
