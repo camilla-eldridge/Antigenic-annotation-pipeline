@@ -74,13 +74,47 @@ All scripts mentioned above and the following programs need to be made available
 
 
 ## Notes and improvement:
+
 On gene models and repeats<br /> <br /> <br /> 
 It is important to know before hand the gene model of your protein so that you can manually check the predictions. <br /> <br /> <br /> 
-Unlike in whole genome annotation, there is **no step in this pipeline to remove repeat regions from the draft genome before prediction**, this is a **work in progress**. 
+Unlike in whole genome annotation, there is **no step in this pipeline to remove repeat regions from the draft genome before prediction**, this is a work in progress. 
 <br /> <br /> <br /> 
 To rectify this you can generate a species specific repeat library (using `RepArk` and/or `Repeatmasker`) and `BLAST` the coding-exon predictions against this library  to see if any repeat regions have been included in their predictions. <br /> <br /> <br /> 
 This pipeline can also be run on cDNA datasets; and by using `Transdecoder` you can separate out the long coding transcripts then use these to check the validity of your gene model i.e are the number of exons predicted in the expressed transcript (as predicted only from coding transcripts) the same as in the coding-exon prediction.
 <br /> <br /> <br /> 
+
+On orthology <br /> <br /> <br /> 
+The prediction of orthologs can be hindered by the existence of paralogs (gene duplications). This pipeline will predict the coding-exon sequence that
+aligns best to a reference sequence and cannot distinguish between orthologs and paralogs. <br /> <br /> <br /> 
+
+ The chance of your protein being a true ortholog can be explored after prediction:
+
+- Check if your coding-exon is a single copy gene.
+- Making a gene tree (if this tree follows the species phylogeny then your sequence is more likely to be an Ortholog).
+- Check for in frame stop codons that might indicate your sequence is a non-functional paralog. Note that `longest_orf.py` searches for in-frame stop codons, checking for an output txt file of these stop codons in predicted coding-exon sequences is a good place to start.
+- If available, check transcriptome data, to see if your predicted coding-exon sequence is expressed by your species.
+- Check functional annotation, i.e does the protein sequence have the same predicted functional domains as known orthologous sequences? It is generally assumed that orthologous proteins carry out the same or similar function  (although, of course, there are exceptions). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
