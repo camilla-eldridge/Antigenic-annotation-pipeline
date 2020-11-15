@@ -73,7 +73,7 @@ All scripts mentioned above and the following programs need to be made available
 <br /> <br /> <br /> 
 
 
-## Notes and improvement:
+## Notes on limitations and improvement:
 
 **On gene models and repeats** 
 
