@@ -5,7 +5,7 @@ This pipeline was created to predict and annotate potential vaccine candidate pr
 
 <br /> <br /> <br /> 
 **Problems:** 
-* Some genomes of medically important parasites are in draft form and lack functional annotation that inhibits the screeing of potential vaccine candidates.
+* Some genomes of medically important parasites are in draft form and lack the functional annotation needed in the prediction of potential vaccine candidates.
 * When faced with multiple draft genomes it can be beyond the scope of a single project to annotate multiple genomes for comparative studies.
 
 **Solution:** 
