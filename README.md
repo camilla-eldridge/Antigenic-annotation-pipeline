@@ -82,7 +82,7 @@ All scripts mentioned above and the following programs need to be made available
 * It is important to know before hand the gene model of your protein so that you can manually check the predictions. <br /> <br /> <br /> 
 * Unlike in whole genome annotation, there is **no step in this pipeline to remove repeat regions from the draft genome before prediction**, this is a work in progress. 
 <br /> <br /> <br /> 
-* To rectify this you can generate a species specific repeat library (using `RepArk` and/or `Repeatmasker` or `dust`) and softmask the genome (adding the option use --softmasktarget).  <br /> <br /> <br /> 
+* To rectify this you can generate a species specific repeat library (using `RepArk` and/or `Repeatmasker` or `dust`) and softmask the genome (adding the option use --softmasktarget in the line that calls exonerate in the Antigenic-annotation.sh script).  <br /> <br /> <br /> 
 * This pipeline can also be run on cDNA datasets; and by using `Transdecoder` you can separate out the long coding transcripts then use these to check the validity of your gene model i.e are the number of exons predicted in the expressed transcript (as predicted only from coding transcripts) the same as in the coding-exon prediction.
 <br /> <br /> <br /> 
 
