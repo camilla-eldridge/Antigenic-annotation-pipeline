@@ -3,6 +3,7 @@
 This pipeline was created to predict and annotate potential vaccine candidate proteins from draft Schistosome genomes.
 
 <br /> <br /> <br /> 
+
 **Problems:** 
 * Some genomes of medically important parasites are in draft form and lack the functional annotation needed in the prediction of potential vaccine candidates.
 * When faced with multiple draft genomes it can be beyond the scope of a single project to annotate multiple genomes for comparative studies.
