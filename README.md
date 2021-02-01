@@ -1,4 +1,3 @@
-
 # Antigenic annotation pipeline
 
 This pipeline was created to predict and annotate potential vaccine candidate proteins from draft Schistosome genomes.
