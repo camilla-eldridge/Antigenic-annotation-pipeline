@@ -100,7 +100,7 @@ aligns best to a given reference sequence and **cannot distinguish between ortho
 
 
 
-
+<br /> <br /> <br /> 
 
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
