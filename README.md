@@ -1,6 +1,6 @@
 # Antigenic annotation pipeline
 
-This pipeline was created to predict and annotate potential vaccine candidate proteins from draft Schistosome genomes.
+This pipeline was created during my PhD at Kingston Univeristy London to predict and annotate potential vaccine candidate proteins from draft Schistosome genomes.
 
 <br /> <br /> <br /> 
 
@@ -102,6 +102,17 @@ aligns best to a given reference sequence and **cannot distinguish between ortho
 
 
 
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 
 
