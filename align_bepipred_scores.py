@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+"""
+@author: camilla eldridge
+"""
+
 import sys
 
 bepipred=sys.argv[1] #"AG_test_clustalo.bepipred"
