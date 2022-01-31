@@ -1,6 +1,8 @@
 #!/bin/bash
 # set -e
 
+#author: camilla eldridge
+
 
 # Notes on usage #
 if [ "$1" == "-h" ]; then
