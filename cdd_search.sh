@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#author: camilla eldridge
+
 coding_sequence="$1"
 name="${coding_sequence%.*}"
 
