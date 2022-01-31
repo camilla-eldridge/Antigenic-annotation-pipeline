@@ -1,4 +1,7 @@
 #!/usr/bin/env Rscript
+
+#author: camilla eldridge
+
 args = commandArgs(trailingOnly=TRUE)
 
 library(ggplot2)
