@@ -96,8 +96,14 @@ aligns best to a given reference sequence and **cannot distinguish between ortho
   - Making a gene tree (if this tree follows the species phylogeny then your sequence is more likely to be an ortholog).
   - Check for in frame stop codons that might indicate your sequence is a non-functional paralog. Note that `longest_orf.py` searches for in-frame stop codons,   checking for an output txt file of these stop codons in predicted coding-exon sequences is a good place to start.
   - If available, check transcriptome data, to see if your predicted coding-exon sequence is expressed by your species.
-  - Check functional annotation, i.e does the protein sequence have the same predicted functional domains as known orthologous sequences? It is generally assumed that orthologous proteins carry out the same or similar function  (although, of course, there are exceptions). 
+  - Check functional annotation, i.e does the protein sequence have the same predicted functional domains as known orthologous sequences? It is generally assumed that orthologous proteins carry out the same or similar function  (although, of course, there are exceptions). <br /> <br /> <br /> 
 
+
+## Citation
+
+If you use this pipeline in your work please cite as:  
+
+Eldridge, C., Majoros, G., Cook, R.T., Kidd, D., Emery, A.M., Lawton, S.P. (2021). An antigenic annotation pipeline for transmembrane proteins from draft genomes[Software]. Unpublished
 
 
 <br /> <br /> <br /> 
