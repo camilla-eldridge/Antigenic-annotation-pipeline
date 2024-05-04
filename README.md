@@ -103,7 +103,7 @@ aligns best to a given reference sequence and **cannot distinguish between ortho
 
 If you use this pipeline in your work please cite as:  
 
-Eldridge, C., Majoros, G., Cook, R.T., Kidd, D., Emery, A.M., Lawton, S.P. (2021). An antigenic annotation pipeline for transmembrane proteins from draft genomes[Software]. Unpublished
+Eldridge, C.J.L, Majoros, G., Cook, R.T., Kidd, D., Emery, A.M., Lawton, S.P. (2021). An antigenic annotation pipeline for transmembrane proteins from draft genomes[Software]. Unpublished
 
 
 <br /> <br /> <br /> 
